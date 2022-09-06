@@ -14,7 +14,7 @@
 }
 
 body {
-  width: 38.4rem;
+  max-width: 38.4rem;
   margin: 0 auto 6rem;
 }
 
@@ -98,5 +98,33 @@ main > section {
 
 .card {
   position: relative;
+}
+
+.card img {
+  animation: downtop 700ms 350ms backwards;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
