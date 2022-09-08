@@ -94,6 +94,8 @@ main > section {
   position: absolute;
   top: 1.6rem;
   right: 1.6rem;
+
+  animation: topdown 700ms;
 }
 
 .card {
